@@ -17,7 +17,7 @@ app.use(function (req, res, next) {
             band: 'B2',
             work_experience_in_year: 2,
             organisation_name: 'wipro',
-            preffered_language: 'en',
+            preferred_language: 'en',
             country: 'India'
         };
         var user = body.object ? body.object : defaultUser;
