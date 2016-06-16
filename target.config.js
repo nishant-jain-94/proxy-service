@@ -11,10 +11,10 @@
 module.exports = {
     "rule": "http://localhost:8070",
     "credentials": "http://localhost:3031",
-    "travelPlan": process.env.TRAVELPLAN_MICROSERVICE,
+    "travelPlan": process.env.TRAVELPLAN_MICROSERVICE || "http://localhost:8080",
     "masters": "http://localhost:8071",
-    "api": "http://localhost:8081",
+    "api": "http://localhost:3040",
     "location": process.env.LOCATION_MICROSERVICE,
-    "searchResult": process.env.SEARCHRESULT_MICROSERVICE,
+    "search": process.env.SEARCHRESULT_MICROSERVICE || "http://localhost:3000",
     "sample": 'http://localhost:8082'
 }

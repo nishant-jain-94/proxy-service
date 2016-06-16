@@ -9,10 +9,11 @@ const target = require('./target.config')
 
 app.use(function (req, res, next) {
     httpRequest({
-        url: 'http://localhost:3031/credentials/decodeToken', method: 'GET', headers: {
+        url: 'http://localhost:3031/credential/authenticate', method: 'GET', headers: {
             'x-access-token': req.headers['x-access-token']
         }
     }, function (error, response, body) {
+        console.log(error);
         var defaultUser = {
             band: 'B2',
             work_experience_in_year: 2,
